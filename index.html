@@ -27,7 +27,9 @@
                 <li>Web<span class="studio-top">Studio</span></li>
               </div>
               <div class="link-section">
-                <li class="studio-section">Studio</li>
+                <li class="studio-section current">
+                  <a href="index.html">Studio</a>
+                </li>
                 <li class="portofolio-section">
                   <a href="portofolio.html">Portofolio</a>
                 </li>
@@ -58,7 +60,7 @@
       <main>
         <div class="title-section">
           <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button class="button">Request our service</button>
+          <button data-modal-open class="button">Request our service</button>
         </div>
 
         <!--Abilities section-->
@@ -137,7 +139,7 @@
 
           <!--What we do section-->
 
-          <div class="whatwedo-section">
+          <div class="what-we-do-section">
             <h2 class="details">What we do</h2>
 
             <div class="details-section">
@@ -446,33 +448,42 @@
           <h3 class="icons-title">Find us on</h3>
           <div class="footer-icons">
             <div class="footer-icons-space">
-              <img
-                class="icon-instagram"
-                src="./images/icons.svg/instagram.svg"
-                alt="My Happy SVG"
-              />
+              <a href="https://www.instagram.com/">
+                <img
+                  class="icon-instagram"
+                  src="./images/icons.svg/instagram.svg"
+                  alt="My Happy SVG"
+                />
+              </a>
             </div>
-            <div class="footer-icons-space">
-              <img
-                class="icon-twitter"
-                src="./images/icons.svg/twitter.svg"
-                alt="My Happy SVG"
-              />
-            </div>
-            <div class="footer-icons-space">
-              <img
-                class="icon-facebook"
-                src="./images/icons.svg/facebook.svg"
-                alt="My Happy SVG"
-              />
-            </div>
-            <div class="footer-icons-space">
-              <img
-                class="icon-linkedin"
-                src="./images/icons.svg/linkedin.svg"
-                alt="My Happy SVG"
-              />
-            </div>
+            <a href="https://twitter.com/">
+              <div class="footer-icons-space">
+                <img
+                  class="icon-twitter"
+                  src="./images/icons.svg/twitter.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+            </a>
+            <a href="https://www.facebook.com/">
+              <div class="footer-icons-space">
+                <img
+                  class="icon-facebook"
+                  src="./images/icons.svg/facebook.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/">
+              <div class="footer-icons-space">
+                <img
+                  class="icon-linkedin"
+                  src="./images/icons.svg/linkedin.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+            </a>
           </div>
         </div>
         <div class="address-section">
@@ -493,5 +504,17 @@
         </div>
       </footer>
     </div>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>
+          <img
+            class="close-button"
+            src="images/icons.svg/close-black.svg"
+            alt="Close button"
+          />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
