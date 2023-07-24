@@ -739,8 +739,7 @@ p {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.2);
-  transition-duration: 450ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 400ms ease-out;
 }
 
 .modal-content {
@@ -757,6 +756,9 @@ p {
 
 .is-hidden {
   visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: 400ms ease-out;
 }
 .close-btn {
   background-color: #fff;
